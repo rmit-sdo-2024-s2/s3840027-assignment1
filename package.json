@@ -9,4 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
+  "scripts": {
+    "lint": "eslint ."
+  }
 }
