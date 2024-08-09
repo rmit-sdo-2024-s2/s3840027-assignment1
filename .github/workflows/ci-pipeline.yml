@@ -9,4 +9,12 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    steps:
+    steps: 
+    - name: run linter
+      run: npm run lint
+    - name: run unit tests
+      run: npm test
+    - name: generate artifact
+      run: npm run build
+    - name: upload artifact
+      uses: actions/upload-artifact
